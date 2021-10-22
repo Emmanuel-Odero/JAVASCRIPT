@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning DOM</title>
+</head>
+<body>
+    <p>We learning DOM</p>
+    <div id="firstDiv">
+        <p>Paragraph inside a div</p>
+        <div>
+            <h5>This is a div tag inside a div tag</h5>
+            <a id="btn" class="button">See Review</a>
+        </div>
+    </div>
+    <div id="secondDiv">
+        <h3>review title</h3>
+        <p>this should be hidden and revealed on click</p>
+        <p>review text hear</p>
+    </div>
+    <div id="review" class="d-none">
+        <h3>review title</h3>
+        <p>this should be hidden and revealed on click</p>
+        <p>review text hear</p>
+    </div>
+    <!-- <style>
+         body{
+             background: rgba(201, 30, 101, 0.712);
+         }
+         #firstDiv{
+             margin: auto;
+             font-size: 20px;
+             padding: 1em;
+             background-color: blue;
+             color: yellow
+         }
+         #secondDiv{
+             background-color: aquamarine;
+             margin-top: 3em;
+         }
+         a{
+             margin: auto;
+             padding: 3px;
+             position: relative;
+             left: 40%;
+             right: 60%;
+             font-size: 1.5em;
+             font-style: bold;
+             border-style: solid;
+             border-radius: 13px;
+             background-color: midnightblue;
+         }
+         .button:hover{
+             background-color: red;
+             cursor: pointer;
+         }
+         .d-none{
+             display: none;
+         }
+         #review{
+            margin: -13em auto;
+            background-color: rgba(253, 200, 0, 0.891);
+            padding: 1em;
+            width: 100%;
+            height: 15em;
+            position: relative;
+         }
+     </style>-->
+     <script>
+        const style = document.createElement('style');
+style.innerHTML = `
+body{
+             background: rgba(201, 30, 101, 0.712);
+         }
+         #firstDiv{
+             margin: auto;
+             font-size: 20px;
+             padding: 1em;
+             background-color: blue;
+             color: yellow
+         }
+         #secondDiv{
+             background-color: aquamarine;
+             margin-top: 3em;
+         }
+         a{
+             margin: auto;
+             padding: 3px;
+             position: relative;
+             left: 40%;
+             right: 60%;
+             font-size: 1.5em;
+             font-style: bold;
+             border-style: solid;
+             border-radius: 13px;
+             background-color: midnightblue;
+         }
+         .button:hover{
+             background-color: red;
+             cursor: pointer;
+         }
+         .d-none{
+             display: none;
+         }
+         #review{
+            margin: -24em auto;
+            background-color: rgba(253, 200, 0, 0.891);
+            padding: 1em;
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+         }
+    `;
+document.head.appendChild(style);
+let rbutton=document.getElementById("btn");
+        rbutton.addEventListener("click", function(){
+            const review = document.getElementById("review")
+            if (review.classList.contains('d-none')) {
+            review.classList.remove('d-none')
+            rbutton.text="CLOSE REVIEW";
+        } else {
+            review.classList.add("d-none")
+            rbutton.textContent="SEE REVIEW";
+        }
+        })
+     </script>
+</body>
+</html>

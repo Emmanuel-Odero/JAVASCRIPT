@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "This folder contains all my developments in javascript. It has the following folders: learning containing lessons, playground -where I test codes and play around with javascript & projects where all my Javascript projects are commited",
+  "main": "files.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emmanuel-Odero/JAVASCRIPT.git"
+  },
+  "keywords": [
+    "javascript",
+    "syntax"
+  ],
+  "author": "Emmanuel Odero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emmanuel-Odero/JAVASCRIPT/issues"
+  },
+  "homepage": "https://github.com/Emmanuel-Odero/JAVASCRIPT#readme"
+}
