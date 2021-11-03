@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Emmanuel-Odero/JAVASCRIPT/issues"
   },
-  "homepage": "https://github.com/Emmanuel-Odero/JAVASCRIPT#readme"
+  "homepage": "https://github.com/Emmanuel-Odero/JAVASCRIPT#readme",
+  "dependencies": {
+    "youtube-playlist-downloader": "^1.0.2"
+  }
 }
