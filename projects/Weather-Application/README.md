@@ -1,1 +1,2 @@
 ##This project is not yet over more is still yet to be done so as to make it repsonsive to the user requests
+Until now the program cannot get weather of the scifed location, looking forwar to complete very soon.
